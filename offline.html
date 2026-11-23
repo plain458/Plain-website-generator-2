@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>Plain Website Generator 2 - offline</title>
+<style>
+html,body{height:100%;margin:0}
+body{display:flex;align-items:center;justify-content:center;background:#000000;color:#FFFFFF;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+main{max-width:360px}
+img{width:84px;height:84px;border-radius:20px;margin-bottom:18px}
+h1{font-size:22px;margin:0 0 8px}
+p{margin:0 0 22px;line-height:1.5;opacity:.8}
+button{font:inherit;font-weight:600;border:0;border-radius:12px;padding:12px 22px;background:#000000;color:#FFFFFF;cursor:pointer}
+</style>
+</head>
+<body>
+<main>
+<img src="icons/icon-192.png" alt="">
+<h1>You're offline</h1>
+<p>Plain Website Generator 2 couldn't load this page without a connection. Check your internet and try again.</p>
+<button type="button" onclick="location.reload()">Try again</button>
+</main>
+<script>window.addEventListener('online',function(){location.reload()})</script>
+</body>
+</html>
